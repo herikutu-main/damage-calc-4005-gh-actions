@@ -21,7 +21,7 @@ jobs:
       run: npx jest --ci --reporters=default --reporters=jest-junit
       env:
         JEST_JUNIT_OUTPUT: "./junit/test_results.xml"
-    - uses: actions/upload-artifact@c4
+    - uses: actions/upload-artifact@v4
       with:
         path: ./junit/test_results/xml
       if: always()
