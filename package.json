@@ -5,7 +5,11 @@
   "main": "index.js",
   "author": "",
   "scripts": {
-    "test": "jest"
+    "test": "jest --reporters=default --reporters=jest-junit"
+  },
+  "jest-junit": {
+    "outputDirectory": "./junit/test_results",
+    "outputName": "xml" 
   },
   "license": "ISC",
   "devDependencies": {
